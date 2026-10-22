@@ -16,8 +16,7 @@ relying on any finding.
 | [condition-findings-builder](https://github.com/erinmagennis/condition-findings-builder) | The method: retrieval, screening, extraction, identifier resolution, quality checks with negative controls, packaging and verification. One config file per condition area. | code and protocols, no data |
 
 The two datasets share a schema and a provenance standard but are separate corpora with different scope, time span
-and screening. They are joined only through an explicit crosswalk into a claim graph, which will be published as its
-own repository once the human reads below are complete.
+and screening. They are not merged into one table.
 
 ## How the findings were built
 

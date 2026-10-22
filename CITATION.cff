@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "condition-findings"
+message: "This is an index. Please cite the dataset repository and version you used, and the original papers behind any finding you rely on."
+type: dataset
+authors:
+  - family-names: "Magennis"
+    given-names: "Erin"
+date-released: "2026-10-22"
+license: CC-BY-4.0
+repository-code: "https://github.com/erinmagennis/condition-findings"
+keywords: [dysautonomia, ehlers-danlos, research-findings, open-data]
+references:
+  - type: dataset
+    title: "POTS / Dysautonomia Literature Findings"
+    authors: [{family-names: "Magennis", given-names: "Erin"}]
+    repository-code: "https://github.com/erinmagennis/pots-findings"
+  - type: dataset
+    title: "EDS and Hypermobility Literature Findings"
+    authors: [{family-names: "Magennis", given-names: "Erin"}]
+    repository-code: "https://github.com/erinmagennis/eds-findings"
+  - type: software
+    title: "condition-findings-builder"
+    authors: [{family-names: "Magennis", given-names: "Erin"}]
+    repository-code: "https://github.com/erinmagennis/condition-findings-builder"
