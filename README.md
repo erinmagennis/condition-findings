@@ -30,16 +30,19 @@ and screening. They are not merged into one table.
 
 ## Verification status
 
-| check | POTS | EDS |
-|---|---|---|
-| quotes found in source text | 96.0% of re-fetchable quotes, Tiers 1 to 3 (127,041 of 132,295); 185 of 200 in a fresh-fetch sample | 99.6% in a fresh-fetch census of 1,420 pre-2019 rows (1,414 found), wrong-paper control 0 of 400 |
-| entity identifiers | every model-written identifier looked up at its authority in v1.2; 19,782 rows carry a verified identifier, 2,607 were withheld | derived from names by authority lookup from the start; unmatched names left blank |
-| extraction tier vs publication type | 0.97% hard mismatches | 1.15% hard mismatches |
-| does each finding state what its paper found | not yet checked by a human reader | not yet checked by a human reader |
+**POTS findings.** Each finding's quote was looked for in a fresh copy of its source text: 127,041 of the 132,295 quotes in
+the first four packages whose source could be fetched again were found (96.0%), and 185 of 200 in a separate sample drawn
+across all five packages. In version 1.2 every identifier the extraction model had written was looked up at its authority;
+19,782 rows now carry a verified identifier and 2,607 identifiers that pointed at a different entity were withheld. Details:
+[pots-findings](https://github.com/erinmagennis/pots-findings), `benchmarks/` and `audits/`.
 
-The last row is the one that matters most and it is open. Fidelity samples of 200 findings per corpus, with
-worksheets, sit in each repository under `audits/`. Until they are read, treat the findings as leads to the papers,
-not as established results.
+**EDS findings.** For papers published before 2019, 1,414 of 1,420 sampled quotes were found in freshly fetched abstracts,
+and a control that paired quotes with the wrong paper found none. Identifiers were looked up from the entity names at the
+authorities from the start; names that did not match were left blank. Details: [eds-findings](https://github.com/erinmagennis/eds-findings), `qa/` and `audits/`.
+
+**Not yet checked in either dataset:** whether each finding states what its paper found. Fidelity samples of 200 findings
+per dataset, with worksheets, sit under `audits/` in each repository. Until they are read by a person, treat the findings
+as leads to the papers, not as established results.
 
 ## How to cite
 
