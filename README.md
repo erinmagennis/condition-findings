@@ -11,8 +11,8 @@ relying on any finding.
 
 | repository | what it is | size |
 |---|---|---|
-| [pots-findings](https://github.com/erinmagennis/pots-findings) | POTS, dysautonomia and 14 related condition literatures (ME/CFS, long COVID, EDS and hypermobility, fibromyalgia, MCAS, small fiber neuropathy, autism, migraine, IBS and others), 2019 to 2026. Five data packages and a public browser at [pots.erinmagennis.com](https://pots.erinmagennis.com). | 148,186 findings from 11,519 papers |
-| [eds-findings](https://github.com/erinmagennis/eds-findings) | Ehlers-Danlos syndromes and hypermobility spectrum disorder, 1936 to 2026, with the diagnostic era recorded on every row. Four data packages. | 24,200 findings from 3,558 papers |
+| [pots-findings](https://github.com/erinmagennis/pots-findings) | POTS, dysautonomia and related condition literatures (ME/CFS, long COVID, EDS and hypermobility, fibromyalgia, MCAS, small fiber neuropathy, autism, migraine, IBS and others), 2019 to 2026. Five data packages and a public browser at [pots.erinmagennis.com](https://pots.erinmagennis.com). | 148,186 findings from 11,519 papers |
+| [eds-findings](https://github.com/erinmagennis/eds-findings) | Ehlers-Danlos syndromes and hypermobility spectrum disorder, papers published 1946 to 2026, with the diagnostic era recorded on every row. Four data packages. | 24,200 findings from 3,558 papers |
 | [condition-findings-builder](https://github.com/erinmagennis/condition-findings-builder) | The method: retrieval, screening, extraction, identifier resolution, quality checks with negative controls, packaging and verification. One config file per condition area. | code and protocols, no data |
 
 The two datasets share a schema and a provenance standard but are separate corpora with different scope, time span
@@ -33,7 +33,7 @@ own repository once the human reads below are complete.
 
 | check | POTS | EDS |
 |---|---|---|
-| quotes found in source text | 96.0% of re-fetchable quotes, Tiers 1 to 3 (127,041 of 132,295); 185 of 200 in a fresh-fetch sample | 99.6% in a fresh-fetch census (1,414 of 1,420), wrong-paper control 0 of 400 |
+| quotes found in source text | 96.0% of re-fetchable quotes, Tiers 1 to 3 (127,041 of 132,295); 185 of 200 in a fresh-fetch sample | 99.6% in a fresh-fetch census of 1,420 pre-2019 rows (1,414 found), wrong-paper control 0 of 400 |
 | entity identifiers | every model-written identifier looked up at its authority in v1.2; 19,782 rows carry a verified identifier, 2,607 were withheld | derived from names by authority lookup from the start; unmatched names left blank |
 | extraction tier vs publication type | 0.97% hard mismatches | 1.15% hard mismatches |
 | does each finding state what its paper found | not yet checked by a human reader | not yet checked by a human reader |
